@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">MenuApp</string>
+
     <string name="btPesquisa">Pesquisa</string>
     <string name="btTelefone">Telefone</string>
     <string name="btEmail">E-mail</string>
+
+    <string name="pesqPesquisa">Pesquisa</string>
+    <string name="pesqBusca">Buscar</string>
 </resources>

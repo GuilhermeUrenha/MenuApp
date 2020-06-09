@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".Pesquisa">
 
+    <EditText
+        android:id="@+id/tfPesq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="@string/pesqPesquisa"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="108dp"
+        android:onClick="searchWeb"
+        android:text="@string/pesqBusca"
+        app:layout_constraintStart_toStartOf="@+id/tfPesq"
+        app:layout_constraintTop_toBottomOf="@+id/tfPesq" />
 </androidx.constraintlayout.widget.ConstraintLayout>
