@@ -21,7 +21,7 @@ public class Telefone extends AppCompatActivity {
 
     public void DialNumber(View view) {
         EditText edtNumero = (EditText)findViewById(R.id.edtNumero);
-        
+
         /*ArrayList<Character> strs = new ArrayList<Character>();
         for(int i = 0; i < str.length(); i++){
             if(str.charAt(i) != '-') {

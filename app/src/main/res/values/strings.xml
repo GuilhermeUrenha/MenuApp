@@ -6,8 +6,14 @@
     <string name="btEmail">E-mail</string>
 
     <string name="Buscar">Buscar</string>
+    <string name="Ligar">Ligar</string>
+    <string name="Enviar">Enviar</string>
 
     <string name="pesqPesquisa">Pesquisa</string>
 
     <string name="telNumero">Número de Celular</string>
+
+    <string name="emlAddress">Endereço</string>
+    <string name="emlSubject">Título</string>
+    <string name="emlText">Corpo</string>
 </resources>

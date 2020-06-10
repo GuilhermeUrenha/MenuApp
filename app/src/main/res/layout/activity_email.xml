@@ -6,4 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".Email">
 
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/emlAddress"
+        android:autofillHints="username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/emlSubject"
+        android:autofillHints="username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddress" />
+
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="210dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/emlText"
+        android:autofillHints="username"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="@+id/edtSubject"
+        app:layout_constraintTop_toBottomOf="@+id/edtSubject" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="68dp"
+        android:onClick="SendEmail"
+        android:text="@string/Enviar"
+        app:layout_constraintStart_toStartOf="@+id/edtText"
+        app:layout_constraintTop_toBottomOf="@+id/edtText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
