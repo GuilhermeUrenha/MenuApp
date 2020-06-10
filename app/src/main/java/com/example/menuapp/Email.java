@@ -26,8 +26,8 @@ public class Email extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_EMAIL, Addresses);
-        intent.putExtra(Intent.EXTRA_SUBJECT, Subject.getText());
-        intent.putExtra(Intent.EXTRA_TEXT, Text.getText());
+        intent.putExtra(Intent.EXTRA_SUBJECT, Subject.getText().toString());
+        intent.putExtra(Intent.EXTRA_TEXT, Text.getText().toString());
         if (intent.resolveActivity(this.getPackageManager()) != null) {
             this.startActivity(intent);
         }
