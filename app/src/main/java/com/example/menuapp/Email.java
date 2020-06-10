@@ -21,9 +21,11 @@ public class Email extends AppCompatActivity {
         EditText Subject = findViewById(R.id.edtSubject);
         EditText Text = findViewById(R.id.edtText);
 
+        String[] Addresses = { Address.getText().toString() };
+
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_EMAIL, Address.getText());
+        intent.putExtra(Intent.EXTRA_EMAIL, Addresses);
         intent.putExtra(Intent.EXTRA_SUBJECT, Subject.getText());
         intent.putExtra(Intent.EXTRA_TEXT, Text.getText());
         if (intent.resolveActivity(this.getPackageManager()) != null) {
