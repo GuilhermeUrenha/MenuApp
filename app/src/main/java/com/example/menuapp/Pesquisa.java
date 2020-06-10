@@ -19,9 +19,8 @@ public class Pesquisa extends AppCompatActivity {
     public void searchWeb(View view) {
         Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
         EditText edtText = (EditText)findViewById(R.id.tfPesq);
-        intent.putExtra(SearchManager.QUERY, edtText.getText());
-        if (intent.resolveActivity(getPackageManager()) != null) {
+        intent.putExtra(SearchManager.QUERY, edtText.getText().toString());
+        if (intent.resolveActivity(this.getPackageManager()) != null)
             this.startActivity(intent);
-        }
     }
 }

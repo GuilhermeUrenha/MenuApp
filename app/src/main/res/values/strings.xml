@@ -5,6 +5,9 @@
     <string name="btTelefone">Telefone</string>
     <string name="btEmail">E-mail</string>
 
+    <string name="Buscar">Buscar</string>
+
     <string name="pesqPesquisa">Pesquisa</string>
-    <string name="pesqBusca">Buscar</string>
+
+    <string name="telNumero">Número de Celular</string>
 </resources>
